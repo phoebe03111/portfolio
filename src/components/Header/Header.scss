@@ -13,7 +13,38 @@
   }
 }
 
-.nav__list {
-  display: flex;
-  gap: 1rem;
+.nav {
+  &__list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      position: relative;
+    }
+
+    &-item {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__button {
+    display: flex;
+    z-index: 2;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
 }

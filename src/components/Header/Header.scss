@@ -1,0 +1,19 @@
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  @include section-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 6rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 1rem;
+}

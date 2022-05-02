@@ -1,0 +1,7 @@
+@use "../../styles/partials/mixins" as *;
+
+.contact {
+  @include section-padding;
+  background-color: cadetblue;
+  height: 100vh;
+}

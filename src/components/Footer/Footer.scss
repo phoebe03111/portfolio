@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  @include section-padding;
+  @include center;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  color:cornflowerblue;
+}

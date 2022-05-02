@@ -8,13 +8,12 @@ const Header = () => {
 
   const toggleNav = () => setShowNav(!showNav);
 
-  console.log(showNav);
   return (
-    <header className="header">
+    <header id="header" className="header">
       <a href="/">
         <img className="header__logo" src={logo} alt="logo" />
       </a>
-      
+
       <nav className="nav">
         <ul style={{ display: showNav ? "flex" : null }} className="nav__list">
           <li className="nav__list-item">

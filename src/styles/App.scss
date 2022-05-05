@@ -13,7 +13,6 @@ html {
 body {
   font-family: "Karla", sans-serif;
   color: #696969;
-  background-color: beige;
 }
 
 h1,
@@ -52,8 +51,7 @@ button {
   transition: transform 0.2s ease-in-out;
   background-color: transparent;
 
-  &:hover,
-  &:focus {
+  &:active {
     transform: translateY(-5px);
   }
 }

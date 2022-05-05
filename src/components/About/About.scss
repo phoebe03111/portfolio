@@ -2,8 +2,12 @@
 
 .about {
   @include section-padding;
-  background-color: beige;
-  height: 100vh;
+  min-height: 100vh;
+
+  &__title {
+    color: darkslateblue;
+    margin-bottom: 1rem;
+  }
 }
 
 .profile-img {
@@ -13,19 +17,34 @@
   object-position: 0 1.5rem;
 }
 
-.skills__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.skills {
+  &__title {
+    margin: 2rem 0 1.5rem;
+  }
 
-  &-item {
+  &__list {
     @include center;
-    flex-direction: column;
-    transition: all .3s ease;
+    flex-wrap: wrap;
 
-    &:hover {
-      color: burlywood;
-      transform: scale(1.1);
+    &-item {
+      @include center;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.3rem;
+      background-color: white;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        svg {
+          color: burlywood;
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }

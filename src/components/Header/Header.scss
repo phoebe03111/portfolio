@@ -34,10 +34,31 @@
       flex-direction: row;
       gap: 1rem;
       position: relative;
+      background-color: transparent;
     }
 
     &-item {
+      font-weight: 500;
       margin: 0.5rem 0;
+      padding-bottom: 0.3rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline;
+        width: 0%;
+        height: 0.2rem;
+        position: absolute;
+        bottom: 0;
+        background-color: goldenrod;
+        transition: width 0.2s ease-in;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
     }
   }
 

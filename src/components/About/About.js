@@ -8,19 +8,21 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import { SiJavascript, SiMongodb } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
-import { AiFillGithub } from "react-icons/ai";
+import { DiNodejs, DiGit } from "react-icons/di";
+// import { AiFillGithub } from "react-icons/ai";
 import "./About.scss";
 
 const About = () => {
   return (
     <section id="about" className="about">
-      <h1>Hi! I'm Phoebe</h1>
-      <h2>A full-stack developer based in Vancouver, Canada.</h2>
+      <h1 className="about__title">Hi! I'm Phoebe</h1>
+      <p className="about__subtitle">
+        A full-stack developer based in Vancouver, Canada.
+      </p>
       <img src={profile} alt="profile" className="profile-img" />
 
-      <div>
-        <p>Skillsets</p>
+      <section className="skills">
+        <p className="skills__title">Skillsets</p>
         <ul className="skills__list">
           <li className="skills__list-item">
             <FaHtml5 size={50} /> HTML5
@@ -32,7 +34,7 @@ const About = () => {
             <FaSass size={50} /> Sass
           </li>
           <li className="skills__list-item">
-            <SiJavascript size={50} /> Javascript
+            <SiJavascript size={45} /> Javascript
           </li>
           <li className="skills__list-item">
             <FaReact size={50} /> React
@@ -44,13 +46,13 @@ const About = () => {
             <SiMongodb size={50} /> MongoDB
           </li>
           <li className="skills__list-item">
-            <FaDatabase size={50} /> mySQL
+            <FaDatabase size={40} /> mySQL
           </li>
           <li className="skills__list-item">
-            <AiFillGithub size={50} /> git
+            <DiGit size={50} /> git
           </li>
         </ul>
-      </div>
+      </section>
     </section>
   );
 };

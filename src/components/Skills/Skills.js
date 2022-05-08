@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import { SiJavascript, SiMongodb } from "react-icons/si";
 import { DiNodejs, DiGit } from "react-icons/di";
-// import { AiFillGithub } from "react-icons/ai";
 import "./Skills.scss";
 
 const Skills = () => {

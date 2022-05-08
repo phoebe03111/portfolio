@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
 import { AiFillGithub } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import './ProjectDetail.scss';
+import "./ProjectDetail.scss";
+import "aos/dist/aos.css";
 
-const ProjectDetail = ({project}) => {
+const ProjectDetail = ({ project }) => {
   const { title, description, techStack, demoUrl, gitHubUrl, image } = project;
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <article className="project">
+    <article className="project" data-aos="fade-right">
       <div className="project__image">
         <img src={image} alt="bookself" />
         <div className="project__buttons">

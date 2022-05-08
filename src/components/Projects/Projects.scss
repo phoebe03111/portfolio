@@ -8,5 +8,6 @@
   &__container {
     @include center;
     flex-wrap: wrap;
+    gap: 1rem;
   }
 }

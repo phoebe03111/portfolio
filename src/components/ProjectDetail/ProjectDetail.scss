@@ -3,6 +3,9 @@
 .project {
   @include center;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 8px;
 
   @include tablet {
     flex-direction: row;
@@ -12,28 +15,21 @@
   &__image {
     width: 80%;
     position: relative;
-    margin: -4rem 0;
 
     @include tablet {
       width: 100%;
     }
 
     img {
-      height: 100%;
+      height: 80%;
       width: 100%;
       object-fit: cover;
-    }
-
-    &:hover {
-      .project__buttons {
-        opacity: 1;
-      }
     }
   }
 
   &__buttons {
     @include center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     width: 80%;
     height: 50%;
     gap: 1rem;
@@ -43,6 +39,10 @@
     opacity: 0;
     transform: translate(-50%, -50%);
     @include transition-effect;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__button {
@@ -69,3 +69,4 @@
     width: 100%;
   }
 }
+

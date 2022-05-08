@@ -7,5 +7,6 @@
 
   &__container {
     @include center;
+    flex-wrap: wrap;
   }
 }

@@ -39,7 +39,11 @@ const ProjectDetail = ({ project }) => {
       <div className="project__info">
         <h3 className="project__title">{title}</h3>
         <p className="project__description">{description}</p>
-        <p className="project__tech-stack">Built with: {techStack}</p>
+        <p className="project__tech-stack">
+          {techStack.map((item, index) => {
+            return <span key={item + index}>{item}</span>;
+          })}
+        </p>
       </div>
     </article>
   );

@@ -1,10 +1,14 @@
 @use "../../styles/partials/mixins" as *;
 
 .header {
-  @include section-padding;
+  padding: 2% 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet {
+    padding: 1% 10%;
+  }
 
   &__logo {
     width: 6rem;

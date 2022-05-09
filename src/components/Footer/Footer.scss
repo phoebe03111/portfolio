@@ -1,8 +1,12 @@
 @use "../../styles/partials/mixins" as *;
 
 .footer {
-  @include section-padding;
+  padding: 2% 7%;
   @include center;
+
+  @include tablet {
+    padding: 1% 10%;
+  }
 }
 
 .back-to-top {

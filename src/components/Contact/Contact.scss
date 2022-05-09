@@ -3,5 +3,48 @@
 .contact {
   @include section-padding;
   background-color: cadetblue;
-  height: 100vh;
+
+  &__content {
+    width: 100%;
+
+    @include tablet {
+      @include center;
+    }
+  }
+
+  &__info {
+    @include center;
+    flex-direction: column;
+
+    @include tablet {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  &__social {
+    @include center;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  &__form {
+    @include center;
+    flex-direction: column;
+
+    @include tablet {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &__button {
+    border: 2px solid salmon;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: salmon;
+    }
+  }
 }

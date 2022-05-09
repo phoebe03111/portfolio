@@ -9,7 +9,7 @@ const ProjectDetail = ({ project }) => {
   const { title, description, techStack, demoUrl, gitHubUrl, image } = project;
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
   return (

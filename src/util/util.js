@@ -1,35 +1,28 @@
-export function randomSelect() {
+export const randomSelect = () => {
   const times = 30;
 
   const interval = setInterval(() => {
     const randomSkill = pickRandomSkill();
-
-    highlight(randomSkill);
+    // highlight the skill
+    randomSkill.classList.add("highlight");
 
     setTimeout(() => {
-      unhighlight(randomSkill);
-    }, 100);
-  }, 100);
+      // unhighlight the skill
+      randomSkill.classList.remove("highlight");
+    }, 150);
+  }, 150);
 
   setTimeout(() => {
     clearInterval(interval);
 
     setTimeout(() => {
       const randomSkill = pickRandomSkill();
-      highlight(randomSkill);
-    }, 100);
+      randomSkill.classList.add("highlight");
+    }, 150);
   }, times * 100);
-}
+};
 
-export function pickRandomSkill(skillsArr) {
-  const skills = skillsArr;
-  return skills[Math.floor(Math.random() * skillsArr.length)];
-}
-
-export function highlight(skill) {
-  skill.classList.add("highlight");
-}
-
-export function unhighlight(skill) {
-  skill.classList.remove("hightlight");
-}
+const pickRandomSkill = () => {
+  const skills = document.querySelectorAll(".skills__list-item");
+  return skills[Math.floor(Math.random() * skills.length)];
+};

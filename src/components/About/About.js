@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import profile from "../../assets/profile-2.jpeg";
 import Skills from "../Skills/Skills";
 import "./About.scss";
@@ -11,7 +11,6 @@ const About = () => {
         A full-stack developer based in Vancouver, Canada.
       </p>
       <img src={profile} alt="profile" className="profile-img" />
-
       <Skills />
     </section>
   );

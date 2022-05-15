@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -8,13 +8,14 @@ import {
 } from "react-icons/fa";
 import { SiJavascript, SiMongodb } from "react-icons/si";
 import { DiNodejs, DiGit } from "react-icons/di";
+import { randomSelect } from "../../util/util";
 import "./Skills.scss";
 
 const Skills = () => {
-
   return (
     <section className="skills">
       <p className="skills__title">Skillsets</p>
+      
       <ul className="skills__list">
         <li className="skills__list-item">
           <FaHtml5 size={50} /> HTML5
@@ -45,7 +46,7 @@ const Skills = () => {
         </li>
       </ul>
 
-      <button>Select</button>
+      <button onClick={randomSelect} className='skills__button'>Select a skill</button>
     </section>
   );
 };

@@ -38,6 +38,7 @@ const ProjectDetail = ({ project }) => {
 
       <div className="project__info">
         <h3 className="project__title">{title}</h3>
+        <div className="divider"></div>
         <p className="project__description">{description}</p>
         <p className="project__tech-stack">
           {techStack.map((item, index) => {

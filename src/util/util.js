@@ -2,6 +2,9 @@ export const randomSelect = () => {
   const times = 30;
 
   const interval = setInterval(() => {
+    const skills = document.querySelectorAll(".skills__list-item");
+    skills.forEach((skill) => skill.classList.remove("highlight"));
+
     const randomSkill = pickRandomSkill();
     // highlight the skill
     randomSkill.classList.add("highlight");

@@ -26,7 +26,7 @@ const projectsData = [
     title: "CoffeeWise",
     description:
       "A web application to track daily caffeine consumption with a caffeine trivia",
-    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
     videoUrl: null,
     demoUrl: "https://coffeewise.netlify.app/",
     gitHubUrl: "https://github.com/phoebe03111/CoffeeWise",

@@ -14,7 +14,7 @@ import "./Skills.scss";
 const Skills = () => {
   return (
     <section className="skills">
-      <p className="skills__title">Skillsets</p>
+      <h2 className="skills__title">Skillsets</h2>
       
       <ul className="skills__list">
         <li className="skills__list-item">

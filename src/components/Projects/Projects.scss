@@ -2,8 +2,15 @@
 
 .projects {
   @include section-padding;
-  background-color: #FAF9F6;
+  @include center;
+  flex-direction: column;
+  background: url("../../assets/bg.jpeg");
   min-height: 100vh;
+
+  &__title {
+    @include section-title;
+    z-index: 10;
+  }
 
   &__container {
     @include center;

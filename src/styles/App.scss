@@ -1,3 +1,4 @@
+@use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
 *,
@@ -14,8 +15,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
-  color: #4b4b4b;
-  background: url('../assets/bg.jpeg');
+  color: $color-black;
 }
 
 h1,

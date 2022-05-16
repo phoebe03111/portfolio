@@ -10,16 +10,14 @@ const About = () => {
         Hi there! I am Phoebe. <br /> A full stack web developer based in
         Vancouver, Canada.
       </p>
-      <img src={profile} alt="profile" className="profile-img" />
+      <img src={profile} alt="profile" className="about__img" />
       <p>
-        <span className="font-highlight">A little bit about myself:</span> I
+        <span className="about__highlight">A little bit about myself - </span> I
         switched my career and relocated to a new country during pandemic. After
         several months of self-learning and joined BrainStation Web Development
         bootcamp
       </p>
-      <div className="wrap">
-        <Skills />
-      </div>
+      <Skills />
     </section>
   );
 };

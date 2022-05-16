@@ -1,8 +1,30 @@
+@use "./variables" as *;
+
 @mixin section-padding {
   padding: 4% 7%;
 
   @include tablet {
     padding: 2% 10%;
+  }
+}
+
+@mixin section-title {
+  position: relative;
+  font-weight: bold;
+  color: $color-primary;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+
+  &::before {
+    content: "";
+    background-color: $color-secondary;
+    width: 120%;
+    height: 1rem;
+    position: absolute;
+    left: -10%;
+    bottom: 2px;
+    opacity: 1;
+    z-index: -1;
   }
 }
 

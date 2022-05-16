@@ -6,7 +6,7 @@
   flex-direction: column;
 
   &__title {
-    margin: 2rem 0 1.5rem;
+    @include section-title;
   }
 
   &__list {
@@ -28,7 +28,7 @@
 
       &:hover {
         svg {
-          color: burlywood;
+          color: $color-secondary;
           transform: scale(1.1);
         }
       }

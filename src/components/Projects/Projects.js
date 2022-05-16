@@ -6,7 +6,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <section id="projects" className="projects">
-      <h2>Projects</h2>
+      <h2 className="projects__title">Projects</h2>
 
       <section className="projects__container">
         {projectsData.map((project) => {

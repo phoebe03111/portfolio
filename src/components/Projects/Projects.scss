@@ -16,5 +16,9 @@
     @include center;
     flex-wrap: wrap;
     gap: 1rem;
+
+    @include tablet {
+      gap: 1.5rem;
+    }
   }
 }

@@ -11,19 +11,19 @@ const Form = () => {
       data-netlify="true"
     >
       <input type="hidden" name="form-name" value="contact-form" />
-      <input type="text" name="name" id="name" placeholder="name" required />
+      <input type="text" name="name" id="name" placeholder="your name" required />
       <input
         type="email"
         name="email"
         id="email"
-        placeholder="email"
+        placeholder="your email"
         required
       />
       <textarea
         type="text"
         name="message"
         id="message"
-        placeholder="message"
+        placeholder="your message"
         rows={5}
         required
       />

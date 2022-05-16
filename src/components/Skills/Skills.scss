@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 
     @include tablet {
-      margin: 1rem;
+      margin: 1rem 0;
       gap: 0.5rem;
     }
 
@@ -52,6 +52,10 @@
     color: white;
     border-radius: 8px;
     margin-top: 1rem;
+
+    &:hover {
+      transform: scale(0.95);
+    }
   }
 }
 

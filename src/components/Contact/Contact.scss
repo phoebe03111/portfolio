@@ -39,6 +39,14 @@
   &__social {
     @include center;
     margin: 1rem;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &__icons {

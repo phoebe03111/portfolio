@@ -1,8 +1,8 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-import { FiSend } from "react-icons/fi";
 import contactImg from "../../assets/contact.svg";
+import Form from "../Form/Form";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -49,33 +49,7 @@ const Contact = () => {
         </div>
 
         {/* form */}
-        <form className="contact__form">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email"
-            required
-          />
-          <textarea
-            type="text"
-            name="message"
-            id="message"
-            placeholder="message"
-            rows={5}
-            required
-          />
-          <button className="contact__button">
-            Send <FiSend />
-          </button>
-        </form>
+        <Form />
       </div>
     </section>
   );

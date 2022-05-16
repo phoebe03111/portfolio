@@ -1,8 +1,9 @@
+@use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
 .contact {
   @include section-padding;
-  background-color: cadetblue;
+  background-color: $color-primary;
 
   &__content {
     width: 100%;

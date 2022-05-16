@@ -1,3 +1,4 @@
+@use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
 .skills {
@@ -35,7 +36,7 @@
   }
 
   &__button {
-    background-color: pink;
+    background-color: $color-primary;
     color: white;
     border-radius: 8px;
     margin-top: 1rem;
@@ -43,7 +44,7 @@
 }
 
 .highlight {
-  background-color: pink;
+  background-color: $color-primary;
   color: white;
   transform: scale(1.1);
 }

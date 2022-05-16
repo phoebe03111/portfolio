@@ -1,5 +1,6 @@
 import React from "react";
-import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import "./Contact.scss";
 
@@ -25,7 +26,7 @@ const Contact = () => {
             </a>
             <a href="mailto:phoebe03111@gmail.com">
               <li>
-                <AiOutlineMail size={40} />
+                <MdEmail size={40} />
               </li>
             </a>
           </ul>

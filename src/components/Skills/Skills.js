@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -46,7 +46,7 @@ const Skills = () => {
         </li>
       </ul>
 
-      <button onClick={randomSelect} className='skills__button'>Select a skill</button>
+      <button onClick={randomSelect} className='skills__button'>Click me!</button>
     </section>
   );
 };

@@ -26,7 +26,7 @@ const Form = () => {
         rows={5}
         required
       />
-      <button className="contact__button">
+      <button type="submit" className="contact__button">
         Send <FiSend />
       </button>
     </form>

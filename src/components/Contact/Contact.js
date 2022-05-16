@@ -19,18 +19,27 @@ const Contact = () => {
             <ul className="contact__icons">
               <a
                 href="https://www.linkedin.com/in/phoebe--chang/"
-                alt="linkedin"
+                target="_blank"
+                rel="noreferrer"
               >
                 <li>
                   <AiFillLinkedin size={40} />
                 </li>
               </a>
-              <a href="https://github.com/phoebe03111" alt="github">
+              <a
+                href="https://github.com/phoebe03111"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <li>
                   <AiFillGithub size={40} />
                 </li>
               </a>
-              <a href="mailto:phoebe03111@gmail.com">
+              <a
+                href="mailto:phoebe03111@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <li>
                   <MdEmail size={40} />
                 </li>

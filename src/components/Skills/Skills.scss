@@ -2,6 +2,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .skills {
+  @include section-padding;
   @include center;
   flex-direction: column;
 

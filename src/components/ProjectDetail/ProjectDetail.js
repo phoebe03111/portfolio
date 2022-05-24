@@ -54,7 +54,9 @@ const ProjectDetail = ({ project }) => {
       </div>
 
       <div className="project__info">
-        <h3 className="project__title">{title}</h3>
+        <a href={demoUrl} target="_blank" rel="noreferrer">
+          <h3 className="project__title">{title}</h3>
+        </a>
         <div className="divider"></div>
         <p className="project__description">{description}</p>
         <p className="project__tech-stack">

@@ -3,8 +3,8 @@ const projectsData = [
     id: 1,
     title: "BookSelf",
     description:
-      "A full stack web application that allows users to build a virtual bookshelf and track their reading.",
-    techStack: ["React", "Material UI", "Express", "MySQL"],
+      "A full stack web application that allows users to build a virtual bookshelf and track their reading",
+    techStack: ["React", "Material UI", "Express", "MySQL", "Google Books API"],
     videoUrl: "https://www.loom.com/share/a6fca1e611984f948a108785e1497d28",
     demoUrl: "https://book-self.herokuapp.com/",
     gitHubUrl: "https://github.com/phoebe03111/BookSelf",
@@ -14,7 +14,7 @@ const projectsData = [
     id: 2,
     title: "The One With The Array Methods",
     description:
-      "A website for learning and practicing JavaScript array methods",
+      "A website for learning and practicing 19 JavaScript array methods. Built it for students when I work as a TA at the bootcamp",
     techStack: ["React"],
     videoUrl: null,
     demoUrl: "https://the-one-with-the-array-methods.netlify.app/",
@@ -23,6 +23,17 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "Fun With AI",
+    description:
+      "A web application that allows users to enter prompts and will fetch responses from the OpenAI API. Results would be displayed in a list from newst to oldest.",
+    techStack: ["React", "OpenAI API"],
+    videoUrl: null,
+    demoUrl: "https://fun-ai.netlify.app/",
+    gitHubUrl: "https://github.com/phoebe03111/openai-project",
+    image: require("../assets/projects/fun-ai.png"),
+  },
+  {
+    id: 4,
     title: "CoffeeWise",
     description:
       "A web application to track daily caffeine consumption with a caffeine trivia",
@@ -33,7 +44,7 @@ const projectsData = [
     image: require("../assets/projects/coffeewise.png"),
   },
   {
-    id: 4,
+    id: 5,
     title: "Alohomora",
     description:
       "A collaborative hackathon project built with 3 UX designers and other 2 developers in 24 hours",
@@ -44,7 +55,7 @@ const projectsData = [
     image: require("../assets/projects/alohomora.png"),
   },
   {
-    id: 5,
+    id: 6,
     title: "YVR Social Group",
     description: "A single page application markup",
     techStack: ["HTML", "CSS", "Bootstrap 5"],
@@ -54,7 +65,7 @@ const projectsData = [
     image: require("../assets/projects/yvr-social.png"),
   },
   {
-    id: 6,
+    id: 7,
     title: "Horizon Digital Solutions",
     description: "A digital consulting company website markup",
     techStack: ["HTML", "CSS", "JavaScript"],

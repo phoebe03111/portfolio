@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
+import { BsFileEarmarkText } from "react-icons/bs";
 import contactImg from "../../assets/contact.svg";
 import Form from "../Form/Form";
 import "./Contact.scss";
@@ -23,7 +24,7 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 <li>
-                  <AiFillLinkedin size={40} />
+                  <AiFillLinkedin size={35} />
                 </li>
               </a>
               <a
@@ -32,7 +33,7 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 <li>
-                  <AiFillGithub size={40} />
+                  <AiFillGithub size={35} />
                 </li>
               </a>
               <a
@@ -41,7 +42,17 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 <li>
-                  <MdEmail size={40} />
+                  <MdEmail size={35} />
+                </li>
+              </a>
+              <a
+                href="https://www.canva.com/design/DAFBxphQL6A/oWzDxMivGCZV6u4NNwGx6A/view?utm_content=DAFBxphQL6A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                target="_blank"
+                rel="noreferrer"
+                className="contact__resume"
+              >
+                <li>
+                  <BsFileEarmarkText size={30} />
                 </li>
               </a>
             </ul>

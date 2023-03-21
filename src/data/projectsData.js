@@ -21,17 +21,17 @@ const projectsData = [
     gitHubUrl: "https://github.com/phoebe03111/the-one-with-array-methods",
     image: require("../assets/projects/the-one-with-the-array-methods.png"),
   },
-  {
-    id: 3,
-    title: "Fun With AI",
-    description:
-      "A web application that allows users to enter prompts and will fetch responses from the OpenAI API. Results would be displayed in a list from newst to oldest.",
-    techStack: ["React", "OpenAI API"],
-    videoUrl: null,
-    demoUrl: "https://fun-ai.netlify.app/",
-    gitHubUrl: "https://github.com/phoebe03111/openai-project",
-    image: require("../assets/projects/fun-ai.png"),
-  },
+  // {
+  //   id: 3,
+  //   title: "Fun With AI",
+  //   description:
+  //     "A web application that allows users to enter prompts and will fetch responses from the OpenAI API. Results would be displayed in a list from newst to oldest.",
+  //   techStack: ["React", "OpenAI API"],
+  //   videoUrl: null,
+  //   demoUrl: "https://fun-ai.netlify.app/",
+  //   gitHubUrl: "https://github.com/phoebe03111/openai-project",
+  //   image: require("../assets/projects/fun-ai.png"),
+  // },
   {
     id: 4,
     title: "CoffeeWise",
@@ -43,17 +43,17 @@ const projectsData = [
     gitHubUrl: "https://github.com/phoebe03111/CoffeeWise",
     image: require("../assets/projects/coffeewise.png"),
   },
-  {
-    id: 5,
-    title: "Alohomora",
-    description:
-      "A collaborative hackathon project built with 3 UX designers and other 2 developers in 24 hours",
-    techStack: ["React"],
-    videoUrl: null,
-    demoUrl: 'https://hnslyswhy.github.io/Alohomora/',
-    gitHubUrl: "https://github.com/phoebe03111/Alohomora",
-    image: require("../assets/projects/alohomora.png"),
-  },
+  // {
+  //   id: 5,
+  //   title: "Alohomora",
+  //   description:
+  //     "A collaborative hackathon project built with 3 UX designers and other 2 developers in 24 hours",
+  //   techStack: ["React"],
+  //   videoUrl: null,
+  //   demoUrl: 'https://hnslyswhy.github.io/Alohomora/',
+  //   gitHubUrl: "https://github.com/phoebe03111/Alohomora",
+  //   image: require("../assets/projects/alohomora.png"),
+  // },
   {
     id: 6,
     title: "YVR Social Group",

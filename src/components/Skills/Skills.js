@@ -4,7 +4,6 @@ import {
   FaCss3Alt,
   FaSass,
   FaReact,
-  FaDatabase,
 } from "react-icons/fa";
 import { SiJavascript, SiMongodb, SiFirebase } from "react-icons/si";
 import { DiNodejs, DiGit } from "react-icons/di";

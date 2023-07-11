@@ -3,11 +3,11 @@ const projectsData = [
     id: 1,
     title: "BookSelf",
     description:
-      "A full stack web application that allows users to build a virtual bookshelf and track their reading",
-    techStack: ["React", "Redux", "Material UI", "Express", "MongoDB", "Google Books API"],
-    videoUrl: "https://www.loom.com/share/a6fca1e611984f948a108785e1497d28",
+      "A full stack web app designed to assist users in curating a virtual bookshelf and effectively monitoring their reading progress.",
+    techStack: ["React", "Redux Toolkit", "Material UI", "Express", "MongoDB", "Google Books API"],
+    videoUrl: "https://www.youtube.com/watch?v=yyMpv-HW4Hk",
     demoUrl: "https://bookself.onrender.com/",
-    gitHubUrl: "https://github.com/phoebe03111/BookSelf",
+    gitHubUrl: "https://github.com/phoebe03111/bookself-v2",
     image: require("../assets/projects/bookself.png"),
   },
   {

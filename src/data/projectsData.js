@@ -4,9 +4,9 @@ const projectsData = [
     title: "BookSelf",
     description:
       "A full stack web application that allows users to build a virtual bookshelf and track their reading",
-    techStack: ["React", "Material UI", "Express", "MySQL", "Google Books API"],
+    techStack: ["React", "Redux", "Material UI", "Express", "MongoDB", "Google Books API"],
     videoUrl: "https://www.loom.com/share/a6fca1e611984f948a108785e1497d28",
-    demoUrl: "https://book-self.herokuapp.com/",
+    demoUrl: "https://bookself.onrender.com/",
     gitHubUrl: "https://github.com/phoebe03111/BookSelf",
     image: require("../assets/projects/bookself.png"),
   },

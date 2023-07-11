@@ -1,53 +1,67 @@
-import React from "react";
+import { useState } from "react";
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaSass,
-  FaReact,
-} from "react-icons/fa";
-import { SiJavascript, SiMongodb, SiFirebase } from "react-icons/si";
-import { DiNodejs, DiGit } from "react-icons/di";
-import { randomSelect } from "../../util/util";
+  DndContext,
+  KeyboardSensor,
+  PointerSensor,
+  closestCenter,
+  useSensor,
+  useSensors,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  arrayMove,
+  sortableKeyboardCoordinates,
+} from "@dnd-kit/sortable";
+import { SortableItem } from "./SortableItem";
+import skillsData from "../../data/skillsData";
 import "./Skills.scss";
 
 const Skills = () => {
+  const [items, setItems] = useState(skillsData);
+
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
+
+  const handleDragEnd = (event) => {
+    const { active, over } = event;
+
+    console.log(event);
+    if (active.id !== over.id) {
+      setItems((items) => {
+        const oldIndex = items.findIndex((item) => item.id === active.id);
+        const newIndex = items.findIndex((item) => item.id === over.id);
+
+        return arrayMove(items, oldIndex, newIndex);
+      });
+    }
+  };
+
   return (
     <section className="skills">
       <h2 className="skills__title">Skillsets</h2>
+      <p className="skills__subtitle">Try dragging & dropping the skills!</p>
 
-      <ul className="skills__list">
-        <li className="skills__list-item">
-          <FaReact size={50} /> React
-        </li>
-        <li className="skills__list-item">
-          <SiJavascript size={45} /> Javascript
-        </li>
-        <li className="skills__list-item">
-          <FaHtml5 size={50} /> HTML5
-        </li>
-        <li className="skills__list-item">
-          <FaCss3Alt size={50} /> CSS3
-        </li>
-        <li className="skills__list-item">
-          <FaSass size={50} /> Sass
-        </li>
-        <li className="skills__list-item">
-          <DiNodejs size={50} /> Node.js
-        </li>
-        <li className="skills__list-item">
-          <SiMongodb size={50} /> MongoDB
-        </li>
-        <li className="skills__list-item">
-          <SiFirebase size={50} /> Firebase
-        </li>
-        <li className="skills__list-item">
-          <DiGit size={50} /> git
-        </li>
-      </ul>
-
-      <button onClick={randomSelect} className="skills__button">
-        Click me!
-      </button>
+      <DndContext
+        sensors={sensors}
+        collisionDetection={closestCenter}
+        onDragEnd={handleDragEnd}
+      >
+        <SortableContext items={items}>
+          <ul className="skills__list">
+            {items.map((skill, index) => (
+              <SortableItem key={skill.id} id={skill.id}>
+                <li className="skills__list-item">
+                  {skill.logo} {skill.name}
+                </li>
+              </SortableItem>
+            ))}
+          </ul>
+        </SortableContext>
+      </DndContext>
     </section>
   );
 };

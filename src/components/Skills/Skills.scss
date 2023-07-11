@@ -8,6 +8,12 @@
 
   &__title {
     @include section-title;
+    margin-bottom: 0.3rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 1.5rem;
+    color: rgb(162, 161, 161);
   }
 
   &__list {
@@ -38,23 +44,13 @@
       height: 5rem;
       transition: all 0.3s ease;
       font-size: 0.9rem;
+      cursor: pointer;
 
       &:hover {
         svg {
           transform: scale(1.1);
         }
       }
-    }
-  }
-
-  &__button {
-    background-color: $color-primary;
-    color: white;
-    border-radius: 8px;
-    margin-top: 1rem;
-
-    &:hover {
-      transform: scale(0.95);
     }
   }
 }

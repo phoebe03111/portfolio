@@ -5,7 +5,8 @@ import {
   SiMongodb,
   SiFirebase,
   SiRedux,
-  SiNextdotjs
+  SiNextdotjs,
+  SiTailwindcss
 } from "react-icons/si";
 import { DiNodejs, DiGit } from "react-icons/di";
 
@@ -39,6 +40,11 @@ const skillsData = [
     id: "html5",
     name: "HTML5",
     logo: <FaHtml5 size={50} />,
+  },
+  {
+    id: "tailwind",
+    name: "Tailwind",
+    logo: <SiTailwindcss size={50} />,
   },
   {
     id: "css3",

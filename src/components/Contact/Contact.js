@@ -49,7 +49,7 @@ const Contact = () => {
               <a
                 href={pdf}
                 className="contact__resume"
-                download
+                download='Resume_Phoebe-Chang'
               >
                 <li>
                   <BsFileEarmarkText size={30} />

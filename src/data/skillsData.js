@@ -5,14 +5,20 @@ import {
   SiMongodb,
   SiFirebase,
   SiRedux,
+  SiNextdotjs
 } from "react-icons/si";
 import { DiNodejs, DiGit } from "react-icons/di";
 
 const skillsData = [
   {
     id: "react",
-    name: "react",
+    name: "React",
     logo: <FaReact size={50} />,
+  },
+  {
+    id: "next",
+    name: "Next.js",
+    logo: <SiNextdotjs size={45} />,
   },
   {
     id: "redux",

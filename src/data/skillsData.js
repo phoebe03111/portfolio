@@ -12,7 +12,7 @@ import { DiNodejs, DiGit } from "react-icons/di";
 const skillsData = [
   {
     id: "react",
-    name: "React",
+    name: "React.js",
     logo: <FaReact size={50} />,
   },
   {

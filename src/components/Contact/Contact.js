@@ -5,6 +5,7 @@ import { BsFileEarmarkText } from "react-icons/bs";
 import contactImg from "../../assets/contact.svg";
 import Form from "../Form/Form";
 import "./Contact.scss";
+import pdf from '../../assets/Resume_Phoebe-Chang.pdf'
 
 const Contact = () => {
   return (
@@ -46,10 +47,9 @@ const Contact = () => {
                 </li>
               </a>
               <a
-                href="https://www.canva.com/design/DAFBxphQL6A/oWzDxMivGCZV6u4NNwGx6A/view?utm_content=DAFBxphQL6A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                target="_blank"
-                rel="noreferrer"
+                href={pdf}
                 className="contact__resume"
+                download
               >
                 <li>
                   <BsFileEarmarkText size={30} />
